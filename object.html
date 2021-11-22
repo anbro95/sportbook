@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Страница объекта</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="obj-script.js"></script>
+
+        <link rel="stylesheet" href="obj-style.css">
+    </head>
+    <body>
+        <!-- Шапка -->
+        <div class="page-header">
+            <div class="left-block">
+                <img class="menu-left" onclick="mySecondFunction()" src="../img/menu.svg" alt="">
+
+                <div class="logo-container">
+                    <p class="title">Sportbook</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html></div><!-- Конец шапки   -->
+<!-- Container for the image gallery -->
+<div class="container">
+<div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="1.jfif" style="width:100%">
+</div>
+
+<div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="2.jfif" style="width:100%">
+</div>
+
+<div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="3.jfif" style="width:100%">
+</div>
+
+<div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="4.jfif" style="width:100%">
+</div>
+
+<div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="5.jfif" style="width:100%">
+</div>
+
+<div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="6.jfif" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+
+<div class="row">
+    <div class="column">
+        <img class="demo cursor" src="1.jfif" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="2.jfif" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="3.jfif" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="4.jfif" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="5.jfif" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="6.jfif" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+</div></div><!--  -->
+
+<div class="field-info">
+    <p class="place">Одесса, Приморский район</p>
+    <p class="price">600 грн/час</p>
+     <table>
+         <tr>
+             <td class="left-col">Формат игры: </td>
+             <td class="right-col">5x5</td>
+         </tr>
+         <tr>
+            <td class="left-col">Тип покрытия: </td>
+            <td class="right-col">Искуственный газон</td>
+        </tr>
+        <tr>
+            <td class="left-col">Тип площадки: </td>
+            <td class="right-col">Открытый манеж</td>
+        </tr>
+        <tr>
+            <td class="left-col">Минимальный срок аренды: </td>
+            <td class="right-col">3 часа</td>
+        </tr>
+        <tr>
+            <td class="left-col">Размер: </td>
+            <td class="right-col">50 x 70 метров</td>
+        </tr>
+        <tr>
+            <td class="left-col">Адрес: </td>
+            <td class="right-col">Французский бульвар, 85</td>
+        </tr>
+     </table>
+</div>
+
+
+<table class="timetable text-center">
+    <tr>
+<th></th>
+        <th>23.11</th>
+        <th>24.11</th>
+        <th>25.11</th>
+        <th>26.11</th>
+        <th>27.11</th>
+        <th>28.11</th>
+    </tr>
+    <tr>
+        <td class="time">10.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="time">11.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="time">12.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="time">13.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="time">14.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+
+</body>
+</html>
