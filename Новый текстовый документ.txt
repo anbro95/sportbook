@@ -1,0 +1,59 @@
+// Dll1.cpp : Определяет экспортируемые функции для DLL.
+//
+
+#include "pch.h"
+#include "framework.h"
+#include "Dll1.h"
+#include <iostream>
+using namespace std;
+
+
+
+ DLL1_API int  defineType(int weight) {
+    if (weight > 120 && weight < 280) {
+       cout << "Medium";
+        
+    }
+    else if (weight > 280 && weight < 412) {
+        cout << "Heavy";
+    }
+    else {
+        cout << "Light";
+        return 0;
+    }
+}
+
+
+ DLL1_API int  definePlane (string weight) {
+    if (weight == "Light") {
+        cout << "AN-124";
+    }
+    else if (weight == "Medium") {
+        cout << "MD-11";
+    }
+    else if (weight == "Heavy") {
+        cout << "Boeing 747-400";
+    }
+    else {
+        cout << "null";
+        return 0;
+    }
+}
+
+ DLL1_API int  fuelCost(int hours, string plane) {
+    int cost = 180;
+    int result = 0;
+    if (plane == "Boeing 747-400") {
+        result = (11 * hours) / 100 * cost;
+    }
+    else if (plane == "AN-124") {
+        result = (12 * hours)/100 * cost;
+    }
+    else if (plane == "MD-11") {
+        result = (18 * hours) / 100 * cost;
+    }
+
+    return result;
+    
+}
+
